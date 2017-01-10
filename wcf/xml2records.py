@@ -323,7 +323,7 @@ class XMLParser(HTMLParser):
         """
         p = cls()
         xml = None
-        if isinstance(data, str):
+        if isinstance(data, basestring):
             xml = data
         elif hasattr(data, 'read'):
             xml = data.read()
